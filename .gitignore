@@ -1,0 +1,7 @@
+bin/
+deps/boost/
+deps/miniupnpc/
+deps/platform/
+bjam.exe
+
+
