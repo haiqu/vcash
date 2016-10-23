@@ -37,10 +37,12 @@ cd ./deps/boost
 run ./bootstrap.sh or ./bootstrap.bat
 
 Copy bjam if needed.
+```
 
 
 ### For Linux:
 
+```
 ./bjam link=static toolset=gcc cxxflags=-std=gnu++0x --with-system release install
 
 Extract db and openssl to ./deps/db and ./deps/openssl
@@ -54,10 +56,12 @@ cd ./
 cd test
 
 ./bjam toolset=gcc cxxflags=-std=gnu++0x release
+```
 
 
 ### For MacOS X:
 
+```
 ./bjam link=static --with-system toolset=clang cxxflags="-std=c++11 -stdlib=libc++" release install
 
 Extract db and openssl to ./deps/platforms/osx
@@ -73,10 +77,12 @@ cp ./deps.boost/bjam .
 cd test
 
 ./bjam toolset=clang cxxflags="-std=c++11 -stdlib=libc++" linkflags="-stdlib=libc++" release
+```
 
 
 ### For Windows (using Bash shell):
 
+```
 Edit ./deps/boost/boost/detail/impl/win_iocp_io_service.ipp and add the following line before `pragma once`:
 
 `#include <algorithm> // for min/max`
