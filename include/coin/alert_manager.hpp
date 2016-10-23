@@ -24,6 +24,10 @@
 #include <map>
 #include <mutex>
 
+#ifdef _MSC_VER
+#include <algorithm> // for min/max
+#endif
+
 #include <boost/asio.hpp>
 
 #include <coin/alert.hpp>

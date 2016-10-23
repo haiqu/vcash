@@ -24,6 +24,10 @@
 #include <cstdint>
 #include <string>
 
+#ifdef _MSC_VER
+#include <algorithm> // for min/max
+#endif
+
 #include <boost/asio.hpp>
 
 namespace coin {

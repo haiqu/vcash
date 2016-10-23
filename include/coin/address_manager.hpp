@@ -27,6 +27,10 @@
 #include <set>
 #include <vector>
 
+#ifdef _MSC_VER
+#include <algorithm> // for min/max
+#endif
+
 #include <boost/asio.hpp>
 
 #include <coin/hash.hpp>
