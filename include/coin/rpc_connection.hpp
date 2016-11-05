@@ -367,6 +367,14 @@ namespace coin {
             );
         
             /**
+             * Encodes wallet seed into JSON format.
+             * @param request The json_rpc_request_t.
+             */
+            json_rpc_response_t json_dumpwalletseed(
+                const json_rpc_request_t & request
+            );
+            
+            /**
              * Encodes dumpprivkey data into JSON format.
              * @param request The json_rpc_request_t.
              */
